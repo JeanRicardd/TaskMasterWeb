@@ -25,7 +25,7 @@
             position: relative;
         }
         .changelog-item:before {
-            content: "•";
+            content: "\2022";
             position: absolute;
             left: 10px;
             color: #0d6efd;
@@ -50,7 +50,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Feedback</a>
+                        <a class="nav-link" href="https://forms.office.com/r/ZBm0dVpJkx">Feedback</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +82,7 @@
                                 </p>
                             </div>
                             <div class="col-md-3 text-center">
-                                <a href="#" class="btn btn-primary btn-lg">
+                                <a href="#" class="btn btn-primary btn-lg" onclick="exibirAlerta()">
                                     <i class="fas fa-download me-2"></i>Download
                                 </a>
                             </div>
@@ -94,21 +94,21 @@
                 <div class="card mt-4">
                     <div class="card-header bg-custom text-white">
                         <h5 class="mb-0">Notas da Versão 1.0.0</h5>
-                        <small>Lançada em 01 de dezembro de 2024 - .NET Framework 4.8.1 | SQLite 1.1.119</small>
+                        <small>Lançada em 01 de fevereiro de 2025 - .NET Framework 4.8.1 | SQLite 1.1.119</small>
                     </div>
                     <div class="card-body">
                         <div class="changelog-section">
                             <h6 class="changelog-header">Funcionalidades</h6>
-                            <div class="changelog-item">Tela de listagem de Tarefas Pendentes e Concluidas.</div>
-                            <div class="changelog-item">Formulário de cadastro/edição/exclusão de tarefas.</strong>.</div>
+                            <div class="changelog-item">Tela de listagem de Tarefas Pendentes e Concluídas.</div>
+                            <div class="changelog-item">Formulário de cadastro/edição/exclusão de tarefas.</div>
                             <div class="changelog-item">Formulário de cadastro/edição/exclusão de categorias de tarefas.</div>
-                            <div class="changelog-item">Alerta 05 minutos antes do inicio de cada tarefa registrada.</div>
-                            <div class="changelog-item">Tela de alerta que sobrepoe todas as telas para informar tarefa pendente de inicio.</div>
+                            <div class="changelog-item">Alerta 05 minutos antes do início de cada tarefa registrada.</div>
+                            <div class="changelog-item">Tela de alerta que sobrepõe todas as telas para informar tarefa pendente de início.</div>
                         </div>
 
                         <div class="changelog-section">
                             <h6 class="changelog-header">Observações do desenvolvedor</h6>
-                            <div class="changelog-item">Todos os erros/bugs identificados, ideias e ajustes, por favor relatar no formulario que se encontra na aba <strong>Feedback</strong>.</div>
+                            <div class="changelog-item">Todos os erros/bugs identificados, ideias e ajustes, por favor relatar no formulário que se encontra na aba <strong>Feedback</strong>.</div>
                         </div>
                     </div>
                 </div>
@@ -117,5 +117,10 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function exibirAlerta() {
+            alert("Aguarde a disponibilidade da nova versão Beta do programa TaskMaster");
+        }
+    </script>
 </body>
 </html>
